@@ -9,18 +9,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #377efa;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoprog.nuevoproy.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #306e44;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoprog.nuevoproy.LoginController">
    <children>
       <Button layoutX="250.0" layoutY="227.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="25.0" prefWidth="102.0" text="Iniciar sesión" />
       <PasswordField fx:id="ContraUsuario" layoutX="226.0" layoutY="188.0" />
       <TextField fx:id="NombreUsu" layoutX="226.0" layoutY="146.0" />
-      <Label layoutX="143.0" layoutY="150.0" text="USUARIO" />
+      <Label layoutX="92.0" layoutY="150.0" text="NOMBRE DE USUARIO" />
       <Label layoutX="137.0" layoutY="192.0" text="CONTRASEÑA" />
       <Button layoutX="441.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnRegistro" text="Registrate" />
       <Label layoutX="376.0" layoutY="301.0" text="¿Aún no tienes cuenta? &#10;Registrate pulsando el botón &#10;de abajo&#10;" />
       <Label layoutX="205.0" layoutY="25.0" prefHeight="31.0" prefWidth="190.0" text="Login MyMusick" textAlignment="CENTER">
          <font>
-            <Font name="Ebrima Bold" size="24.0" />
+            <Font size="24.0" />
          </font>
       </Label>
       <Label layoutX="256.0" layoutY="108.0" prefHeight="21.0" prefWidth="90.0" text="Iniciar sesión">

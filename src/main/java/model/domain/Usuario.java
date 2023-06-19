@@ -7,8 +7,14 @@ public class Usuario {
 	private int id_u;
 	private String nombre;
 	private String contrasena;
-	private List<Cancion> canciones = null;
 
+	public Usuario(int id_u, String nombre) {
+		this.id_u = id_u;
+		this.nombre = nombre;
+	}
+	
+	
+	
 	public Usuario(String nombre, String contrasena) {
 
 		this.nombre = nombre;
@@ -22,6 +28,12 @@ public class Usuario {
 		this.contrasena = "";
 
 	}
+
+	public Usuario(String nombre) {
+		this.nombre=nombre;
+	}
+
+
 
 	public int getId_u() {
 		return id_u;
@@ -47,13 +59,7 @@ public class Usuario {
 		this.contrasena = contrasena;
 	}
 
-	public List<Cancion> getCanciones() {
-		return canciones;
-	}
-
-	public void setCanciones(List<Cancion> canciones) {
-		this.canciones = canciones;
-	}
+	
 
 	@Override
 	public String toString() {

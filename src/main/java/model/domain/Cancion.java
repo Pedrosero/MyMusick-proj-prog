@@ -3,14 +3,17 @@ package model.domain;
 import java.sql.Time;
 import java.util.Objects;
 
+import model.enums.Genero;
+
 public class Cancion {
 
 	private int id_c;
 	private String nombre;
 	private String artista;
-	private String genero;
+	//private String genero;
+	private Genero genero;
 
-	public Cancion(String nombre, String artista, String genero) {
+	public Cancion(String nombre, String artista, Genero genero) {
 
 		this.nombre = nombre;
 		this.artista = artista;
@@ -22,7 +25,14 @@ public class Cancion {
 		this.id_c = 0;
 		this.nombre = "";
 		this.artista = "";
-		this.genero = "";
+		this.genero = null;
+	}
+	
+	public Cancion(int id_c, String nombre, String artista, Genero genero) {
+		this.id_c = id_c;
+		this.nombre = nombre;
+		this.artista = artista;
+		this.genero = genero;
 	}
 
 	public int getId_c() {
@@ -49,11 +59,11 @@ public class Cancion {
 		this.artista = artista;
 	}
 
-	public String getGenero() {
+	public Genero getGenero() {
 		return genero;
 	}
 
-	public void setGenero(String genero) {
+	public void setGenero(Genero genero) {
 		this.genero = genero;
 	}
 

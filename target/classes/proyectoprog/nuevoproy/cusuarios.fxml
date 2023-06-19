@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #306e44;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoprog.nuevoproy.PadminControllerUsuarios">
+   <children>
+      <TableView fx:id="tableview" layoutX="145.0" layoutY="113.0" prefHeight="200.0" prefWidth="149.0" style="-fx-background-color: #dfe2e8;">
+         <columns>
+            <TableColumn fx:id="colId_u" prefWidth="75.0" text="Id_u" />
+            <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+         </columns></TableView>
+      <Button layoutX="529.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnOut" text="Log out" />
+      <TextField fx:id="txtNombre" layoutX="380.0" layoutY="194.0" prefHeight="25.0" prefWidth="117.0" />
+      <Label layoutX="385.0" layoutY="170.0" prefHeight="17.0" prefWidth="107.0" text="Nombre de usuario" />
+      <Button layoutX="175.0" layoutY="323.0" mnemonicParsing="false" onAction="#getAll" text="Actualizar tabla" />
+      <Label layoutX="190.0" layoutY="14.0" prefHeight="31.0" prefWidth="190.0" text="Menú admin" textAlignment="CENTER">
+         <font>
+            <Font name="Ebrima Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="80.0" prefHeight="21.0" prefWidth="125.0" text="Lista de usuarios">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="101.0" prefHeight="57.0" prefWidth="131.0" text="Administrador  de &#10;usuarios&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="76.0" fitWidth="125.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Logo%20proy.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="337.0" layoutY="232.0" mnemonicParsing="false" onAction="#btnDel" prefHeight="22.0" prefWidth="86.0" text="Eliminar" />
+      <Button layoutX="404.0" layoutY="14.0" mnemonicParsing="false" onAction="#btncCanciones" prefHeight="25.0" prefWidth="184.0" text="CONTROL DE CANCIONES ---&gt;" />
+      <Button layoutX="449.0" layoutY="232.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="25.0" prefWidth="86.0" text="Buscar" />
+   </children>
+</AnchorPane>
