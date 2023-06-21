@@ -58,11 +58,11 @@ public class LoginController {
 		} else {
 
 			if (nombre.equals("") || contrasena.equals("")) {
-				Alert alert = new Alert(Alert.AlertType.ERROR);
-				alert.setHeaderText(null);
-				alert.setTitle("ERROR");
-				alert.setContentText("Falta algun campo");
-				alert.showAndWait();
+				Alert alerta = new Alert(Alert.AlertType.ERROR);
+				alerta.setHeaderText(null);
+				alerta.setHeaderText("Login fallido");
+				alerta.setContentText("Falta algún campo");
+				alerta.showAndWait();
 			} else {
 				contrasena = util.Utils.encryptSHA256(contrasena);
 				UsuarioDAO uDao = new UsuarioDAO();

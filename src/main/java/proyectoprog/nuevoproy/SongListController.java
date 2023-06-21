@@ -225,7 +225,7 @@ public class SongListController {
 			Me_gusta nMegusta = new Me_gusta(id_c, LoginController.idusuario);
 			try {
 				if (mgDAO.save(nMegusta) == null) {
-					Alert alerta = new Alert(AlertType.INFORMATION);
+					Alert alerta = new Alert(AlertType.WARNING);
 					alerta.setTitle("Canciones");
 					alerta.setHeaderText("Me gusta repetido");
 					alerta.setContentText("Esta canción ya está agregada a tu lista de me gustas");
